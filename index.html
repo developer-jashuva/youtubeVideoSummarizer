@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- http:/localhost/3000 -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'   http://localhost:3000/">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h1>YouTube Video Summarizer</h1>
+        <form id="video-form" > 
+            <!-- action="/submit" method="POST"  label:Past The Video URL-->
+            <label for="video-url"></label> <br>
+            <input type="text" id="video-url" name="video-url" placeholder="Enter YouTube video URL" required>
+            <button type="submit" value="submit" id="button">Summarize</button>
+        </form>
+   
+        <div id="summary">
+        
+
+         
+            <!-- The summarized text will appear here -->
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
