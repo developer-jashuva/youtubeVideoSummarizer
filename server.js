@@ -33,8 +33,9 @@ const vi = req.body;
 // console.log(vi.vi);
 
 try {
+  console.log("going to get captions");
 const captions = await getVideoCaptions(vi.vi, { lang: 'en', plainText: true  });   
-// console.log(captions);
+/console.log(captions);
                                      
 const prompt = `generate summary for the following text that is fetched from a youtube video and the response sould be in some approriate hrml paragram and headings for the users .the data is: ${captions}`;
 const result = await model.generateContent([prompt]);
